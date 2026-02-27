@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "name": "PM Kisan Samman Nidhi",
+    "category": "Farmer",
+    "description": "Income support of ₹6,000 per year in three equal installments to all landholding farmer families.",
+    "eligibility": "All landholding farmer families.",
+    "documents": [
+      "Aadhaar Card",
+      "Landholding Papers (Pattadar Passbook)",
+      "Bank Account Details",
+      "Mobile Number linked to Aadhaar"
+    ],
+    "applyLink": "https://pmkisan.gov.in/ (Apply through Farmer Corner)",
+    "state": "National"
+  },
+  {
+    "id": "2",
+    "name": "Karshaka Pension (Kerala)",
+    "category": "Farmer",
+    "description": "Monthly pension for farmers who are 60 years or older and have cultivated for at least 10 years.",
+    "eligibility": "Small and marginal farmers in Kerala, annual income below threshold.",
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "Tax Receipt of Land",
+      "Bank Passbook"
+    ],
+    "applyLink": "Apply through local Krishi Bhavan or Akshaya Centers.",
+    "state": "Kerala"
+  },
+  {
+    "id": "3",
+    "name": "Post-Matric Scholarship",
+    "category": "Student",
+    "description": "Financial assistance to students from SC/ST/OBC communities pursuing higher education.",
+    "eligibility": "Students belonging to reserved categories with family income below 2.5 LPA.",
+    "documents": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Mark sheets of previous exam",
+      "Aadhaar Card"
+    ],
+    "applyLink": "https://scholarships.gov.in/ (National Scholarship Portal)",
+    "state": "National"
+  },
+  {
+    "id": "4",
+    "name": "E-Grantz 3.0 (Kerala)",
+    "category": "Student",
+    "description": "Educational assistance for SC, ST, OBC, and economically backward students in Kerala.",
+    "eligibility": "Students studying at post-matric level in recognized institutions in Kerala.",
+    "documents": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Bank Account Details",
+      "Aadhaar Card"
+    ],
+    "applyLink": "https://www.egrantz.kerala.gov.in/",
+    "state": "Kerala"
+  },
+  {
+    "id": "5",
+    "name": "Startup India Initiative",
+    "category": "Entrepreneur",
+    "description": "Support for startups including tax benefits, funding, and simplified compliance.",
+    "eligibility": "DPIIT recognized startups.",
+    "documents": [
+      "Certificate of Incorporation",
+      "Business Plan",
+      "PAN Card"
+    ],
+    "applyLink": "https://www.startupindia.gov.in/",
+    "state": "National"
+  },
+  {
+    "id": "6",
+    "name": "K-DISC One Local Government One Idea",
+    "category": "Entrepreneur",
+    "description": "Encouraging innovation at the local level through micro-enterprises.",
+    "eligibility": "Self-help groups and entrepreneurs in Kerala.",
+    "documents": [
+      "Project Report",
+      "ID Proof",
+      "Local Authority Permission"
+    ],
+    "applyLink": "Contact local Grama Panchayat or K-DISC regional office.",
+    "state": "Kerala"
+  }
+]
