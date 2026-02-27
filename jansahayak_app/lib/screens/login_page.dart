@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
 import '../providers/user_profile_provider.dart';
+import '../widgets/translated_text.dart';
 import 'profile_info_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -46,14 +47,16 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      appBar: AppBar(title: const TranslatedText('Login')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             TextField(
               controller: _controller,
-              decoration: const InputDecoration(labelText: 'Phone or Email'),
+              decoration: const InputDecoration(
+                labelText: 'Phone or Email',
+              ),
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
@@ -61,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
               items: _occupations.map((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
-                  child: Text(value),
+                  child: TranslatedText(value),
                 );
               }).toList(),
               onChanged: (newValue) {
@@ -69,14 +72,16 @@ class _LoginPageState extends State<LoginPage> {
                   _occupation = newValue!;
                 });
               },
-              decoration: const InputDecoration(labelText: 'Occupation'),
+              decoration: const InputDecoration(
+                labelText: 'Occupation',
+              ),
             ),
             const SizedBox(height: 24),
             ElevatedButton(
               onPressed: _loading ? null : _login,
               child: _loading
                   ? const CircularProgressIndicator()
-                  : const Text('Continue'),
+                  : const TranslatedText('Continue'),
             )
           ],
         ),

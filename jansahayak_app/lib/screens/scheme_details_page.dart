@@ -1,15 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../models/scheme.dart';
+import '../widgets/translated_text.dart';
 
 class SchemeDetailsPage extends StatelessWidget {
   static const route = '/scheme';
   const SchemeDetailsPage({Key? key}) : super(key: key);
 
+  Future<void> _launchURL(String url) async {
+    final uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final scheme = ModalRoute.of(context)!.settings.arguments as Scheme;
     return Scaffold(
-      appBar: AppBar(title: Text(scheme.name)),
+      appBar: AppBar(title: TranslatedText(scheme.name)),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -21,7 +30,7 @@ class SchemeDetailsPage extends StatelessWidget {
                 color: scheme.state == 'Kerala' ? Colors.green[100] : Colors.blue[100],
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: Text(
+              child: TranslatedText(
                 '${scheme.state} Government Scheme',
                 style: TextStyle(
                   color: scheme.state == 'Kerala' ? Colors.green[900] : Colors.blue[900],
@@ -30,23 +39,23 @@ class SchemeDetailsPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            Text(
+            const TranslatedText(
               'Description',
-              style: Theme.of(context).textTheme.titleLarge,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            Text(scheme.description),
+            TranslatedText(scheme.description),
             const Divider(height: 32),
-            Text(
+            const TranslatedText(
               'Eligibility',
-              style: Theme.of(context).textTheme.titleLarge,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            Text(scheme.eligibility),
+            TranslatedText(scheme.eligibility),
             const Divider(height: 32),
-            Text(
+            const TranslatedText(
               'Documents Needed',
-              style: Theme.of(context).textTheme.titleLarge,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             ...scheme.documents.map((doc) => Padding(
@@ -55,14 +64,14 @@ class SchemeDetailsPage extends StatelessWidget {
                     children: [
                       const Icon(Icons.check_circle, size: 16, color: Colors.green),
                       const SizedBox(width: 8),
-                      Expanded(child: Text(doc)),
+                      Expanded(child: TranslatedText(doc)),
                     ],
                   ),
                 )),
             const Divider(height: 32),
-            Text(
+            const TranslatedText(
               'How to Apply',
-              style: Theme.of(context).textTheme.titleLarge,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             Text(scheme.applyLink),
@@ -70,11 +79,9 @@ class SchemeDetailsPage extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
-                onPressed: () {
-                  // TODO: launch URL
-                },
+                onPressed: () => _launchURL(scheme.applyLink),
                 icon: const Icon(Icons.open_in_new),
-                label: const Text('Visit Official Website'),
+                label: const TranslatedText('Visit Official Website'),
               ),
             ),
           ],

@@ -3,88 +3,141 @@
     "id": "1",
     "name": "PM Kisan Samman Nidhi",
     "category": "Farmer",
-    "description": "Income support of ₹6,000 per year in three equal installments to all landholding farmer families.",
-    "eligibility": "All landholding farmer families.",
+    "description": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a Central Sector scheme with 100% funding from Government of India. It aims to provide income support to all landholding farmer families across the country to enable them to take care of expenses related to agriculture and allied activities as well as domestic needs.",
+    "eligibility": "1. All landholding farmer families are eligible.\n2. Exclusions: Institutional landholders, families with one or more members as serving or retired officers/employees of Government, taxpayers, professionals (doctors, lawyers, etc.), and retired pensioners with monthly pension of ₹10,000 or more.",
     "documents": [
-      "Aadhaar Card",
-      "Landholding Papers (Pattadar Passbook)",
-      "Bank Account Details",
-      "Mobile Number linked to Aadhaar"
+      "Aadhaar Card (Mandatory)",
+      "Landholding Papers/Land Tax Receipt (Pattadar Passbook)",
+      "Bank Account Details (Aadhaar Seeded)",
+      "Mobile Number linked to Aadhaar",
+      "Self-Declaration Form"
     ],
-    "applyLink": "https://pmkisan.gov.in/ (Apply through Farmer Corner)",
+    "applyLink": "https://pmkisan.gov.in/",
     "state": "National"
   },
   {
     "id": "2",
     "name": "Karshaka Pension (Kerala)",
     "category": "Farmer",
-    "description": "Monthly pension for farmers who are 60 years or older and have cultivated for at least 10 years.",
-    "eligibility": "Small and marginal farmers in Kerala, annual income below threshold.",
+    "description": "The Kerala Agriculture Workers Pension Scheme provides monthly financial assistance to elderly agricultural workers. It is one of the oldest welfare schemes in Kerala, ensuring social security for those who spent their lives in soil cultivation.",
+    "eligibility": "1. Must be a permanent resident of Kerala.\n2. Age must be 60 years or above.\n3. Must have worked in agriculture for at least 10 years.\n4. Must be a member of the Agricultural Workers' Welfare Fund Board.\n5. Annual family income must be below ₹1 Lakh.",
     "documents": [
       "Aadhaar Card",
-      "Ration Card",
-      "Tax Receipt of Land",
-      "Bank Passbook"
+      "Ration Card (BPL/Antyodaya preferred)",
+      "Laborer Certificate from Krishi Bhavan/Panchayat",
+      "Bank Passbook (IFSC enabled)",
+      "Voter ID / Age Proof"
     ],
-    "applyLink": "Apply through local Krishi Bhavan or Akshaya Centers.",
+    "applyLink": "https://lsgkerala.gov.in/en/welfare-pensions",
     "state": "Kerala"
   },
   {
     "id": "3",
-    "name": "Post-Matric Scholarship",
+    "name": "Post-Matric Scholarship (Central)",
     "category": "Student",
-    "description": "Financial assistance to students from SC/ST/OBC communities pursuing higher education.",
-    "eligibility": "Students belonging to reserved categories with family income below 2.5 LPA.",
+    "description": "Central scholarship for students from reserved categories to ensure no student is deprived of higher education due to financial constraints. It covers tuition, academic fees, and a fixed maintenance allowance.",
+    "eligibility": "1. Indian Nationals who are students from SC/ST/OBC/Minority categories.\n2. Pursuing studies in recognized schools/colleges (Class 11 to PhD).\n3. Family income must be under ₹2.5 Lakh per annum for SC/ST and ₹1.5-2 Lakh for OBC/Minorities.",
     "documents": [
-      "Caste Certificate",
-      "Income Certificate",
-      "Mark sheets of previous exam",
-      "Aadhaar Card"
+      "Caste/Category Certificate",
+      "Current Year Income Certificate",
+      "Previous Class Marklist",
+      "Aadhaar Card",
+      "Institution Fee Receipt",
+      "Student Bank Passbook"
     ],
-    "applyLink": "https://scholarships.gov.in/ (National Scholarship Portal)",
+    "applyLink": "https://scholarships.gov.in/",
     "state": "National"
   },
   {
     "id": "4",
     "name": "E-Grantz 3.0 (Kerala)",
     "category": "Student",
-    "description": "Educational assistance for SC, ST, OBC, and economically backward students in Kerala.",
-    "eligibility": "Students studying at post-matric level in recognized institutions in Kerala.",
+    "description": "E-Grantz is Kerala Government's flagship portal for educational assistance. It handles all scholarships for SC, ST, OBC, and OEC (Other Eligible Communities) students studying in Kerala, from Plus Two onwards.",
+    "eligibility": "1. Students must be residents of Kerala.\n2. Studying in government or aided colleges/universities.\n3. Attendance must be at least 75% for release of monthly stipends.\n4. Income thresholds apply for General and OBC categories.",
     "documents": [
-      "Caste Certificate",
-      "Income Certificate",
-      "Bank Account Details",
-      "Aadhaar Card"
+      "Caste and Community Certificate",
+      "Parental Income Certificate",
+      "Bank Account seeded with Aadhaar",
+      "SSLC/Mark Sheets",
+      "Bonafide Certificate from College"
     ],
     "applyLink": "https://www.egrantz.kerala.gov.in/",
     "state": "Kerala"
   },
   {
     "id": "5",
-    "name": "Startup India Initiative",
+    "name": "Startup India Seed Fund",
     "category": "Entrepreneur",
-    "description": "Support for startups including tax benefits, funding, and simplified compliance.",
-    "eligibility": "DPIIT recognized startups.",
+    "description": "Providing financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization. The scheme supports innovative ideas that can solve real-world problems.",
+    "eligibility": "1. Startup recognized by DPIIT, incorporated not more than 2 years ago.\n2. Must have a viable business idea and use of technology in product/services.\n3. Not have received more than ₹10 Lakh in monetary support from other Central/State schemes.",
     "documents": [
+      "DPIIT Recognition Certificate",
       "Certificate of Incorporation",
-      "Business Plan",
-      "PAN Card"
+      "Brief Pitch Deck / Business Plan",
+      "Aadhaar/PAN of Directors",
+      "3-year projected financials"
     ],
-    "applyLink": "https://www.startupindia.gov.in/",
+    "applyLink": "https://seedfund.startupindia.gov.in/",
     "state": "National"
   },
   {
     "id": "6",
-    "name": "K-DISC One Local Government One Idea",
+    "name": "K-DISC OLOI (Kerala)",
     "category": "Entrepreneur",
-    "description": "Encouraging innovation at the local level through micro-enterprises.",
-    "eligibility": "Self-help groups and entrepreneurs in Kerala.",
+    "description": "One Local Government One Idea (OLOI). This initiative by K-DISC encourages local bodies to promote innovative enterprises. It provides mentoring and financial links for local innovators to scale their businesses.",
+    "eligibility": "1. Aspiring entrepreneurs, SHGs, or Micro-enterprises in Kerala.\n2. Idea must address a local need or improve a local process.\n3. Must be willing to operate within the local self-government area.",
     "documents": [
-      "Project Report",
-      "ID Proof",
-      "Local Authority Permission"
+      "Project Summary / Innovation Note",
+      "Address Proof of the Unit",
+      "Aadhaar of Promoters",
+      "Recommendation from local Panchayat/Municipality OFFICE"
     ],
-    "applyLink": "Contact local Grama Panchayat or K-DISC regional office.",
+    "applyLink": "https://kdisc.kerala.gov.in/",
+    "state": "Kerala"
+  },
+  {
+    "id": "7",
+    "name": "PM Mudra Yojana",
+    "category": "Entrepreneur",
+    "description": "Providing loans up to ₹10 Lakh to non-corporate, non-farm small/micro-enterprises. These loans are classified as Shishu, Kishore, and Tarun based on the stage of growth and funding needs of the beneficiary micro-unit.",
+    "eligibility": "1. Any Indian citizen who is eligible to borrow and has a business plan for non-farm income generating activity.\n2. Applicable for small manufacturing units, service sector units, artisans, etc.",
+    "documents": [
+      "Identity Proof (Aadhaar/DL/Voter ID)",
+      "Residence Proof",
+      "Business License/Address Proof",
+      "Project Report for the proposed business"
+    ],
+    "applyLink": "https://www.mudra.org.in/",
+    "state": "National"
+  },
+  {
+    "id": "8",
+    "name": "Subhiksha Keralam Subsidies",
+    "category": "Farmer",
+    "description": "A comprehensive food security project by the Kerala Government, providing subsidies for fallow land cultivation, vegetable farming, poultry, and fish farming to achieve self-reliance in food production.",
+    "eligibility": "1. Farmers, SHGs, and Kudumbashree units in Kerala.\n2. Must register on the AIMS (Agriculture Information Management System) portal.",
+    "documents": [
+      "Land Tax Receipt (Pattayan Receipt)",
+      "Aadhaar Card",
+      "Bank Account registered on AIMS",
+      "Location Map of the farm site"
+    ],
+    "applyLink": "https://aims.kerala.gov.in/",
+    "state": "Kerala"
+  },
+  {
+    "id": "9",
+    "name": "Kudumbashree Start-up Village Entrepreneurship",
+    "category": "Entrepreneur",
+    "description": "Aims to support Kudumbashree members to set up micro-enterprises in rural areas. Provides handholding, training, and financial support (CEF - Community Enterprise Fund).",
+    "eligibility": "1. Must be a member of Kudumbashree NHG in Kerala.\n2. Resident of a rural block covered by the SVEP programme.",
+    "documents": [
+      "Kudumbashree ID / Membership proof",
+      "Aadhaar Card",
+      "Micro-enterprise Project Report",
+      "Bank Passbook"
+    ],
+    "applyLink": "https://www.kudumbashree.org/",
     "state": "Kerala"
   }
 ]

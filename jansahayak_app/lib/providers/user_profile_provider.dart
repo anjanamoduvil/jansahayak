@@ -12,6 +12,33 @@ class UserProfileProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  void setLanguage(String lang) {
+    if (_profile == null) {
+      _profile = UserInfoModel(
+        name: '',
+        age: 0,
+        gender: '',
+        occupation: 'Other',
+        income: '',
+        state: '',
+        district: '',
+        preferredLanguage: lang,
+      );
+    } else {
+      _profile = UserInfoModel(
+        name: _profile!.name,
+        age: _profile!.age,
+        gender: _profile!.gender,
+        occupation: _profile!.occupation,
+        income: _profile!.income,
+        state: _profile!.state,
+        district: _profile!.district,
+        preferredLanguage: lang,
+      );
+    }
+    notifyListeners();
+  }
+
   void setOccupation(String occupation) {
     if (_profile == null) {
       _profile = UserInfoModel(

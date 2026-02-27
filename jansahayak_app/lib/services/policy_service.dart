@@ -12,9 +12,13 @@ class PolicyService {
       final data = jsonDecode(response) as List;
       List<Scheme> schemes = data.map((e) => Scheme.fromJson(e)).toList();
 
-      if (category != null && category.isNotEmpty) {
+      if (category != null && 
+          category.trim().isNotEmpty && 
+          category.trim() != 'Other' && 
+          category.trim() != 'All') {
+        final normalizedCategory = category.trim().toLowerCase();
         schemes = schemes
-            .where((s) => s.category.toLowerCase() == category.toLowerCase())
+            .where((s) => s.category.toLowerCase().contains(normalizedCategory))
             .toList();
       }
       return schemes;

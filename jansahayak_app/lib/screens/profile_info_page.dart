@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/user_info.dart';
 import '../providers/user_profile_provider.dart';
+import '../widgets/translated_text.dart';
 import 'home_page.dart';
 
 class ProfileInfoPage extends StatefulWidget {
@@ -22,6 +23,22 @@ class _ProfileInfoPageState extends State<ProfileInfoPage> {
   final _state = TextEditingController();
   final _district = TextEditingController();
   String _lang = 'en';
+
+  @override
+  void initState() {
+    super.initState();
+    final profile = context.read<UserProfileProvider>().profile;
+    if (profile != null) {
+      _name.text = profile.name;
+      _age.text = profile.age > 0 ? profile.age.toString() : '';
+      _gender.text = profile.gender;
+      _occupation.text = profile.occupation;
+      _income.text = profile.income;
+      _state.text = profile.state;
+      _district.text = profile.district;
+      _lang = profile.preferredLanguage;
+    }
+  }
 
   @override
   void dispose() {
@@ -54,31 +71,51 @@ class _ProfileInfoPageState extends State<ProfileInfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Your Details')),
+      appBar: AppBar(title: const TranslatedText('Your Details')),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Form(
           key: _formKey,
           child: Column(
             children: [
-              TextFormField(controller: _name, decoration: const InputDecoration(labelText: 'Name'), validator: (v) => v!.isEmpty ? 'Required' : null),
-              TextFormField(controller: _age, decoration: const InputDecoration(labelText: 'Age'), keyboardType: TextInputType.number),
-              TextFormField(controller: _gender, decoration: const InputDecoration(labelText: 'Gender')),
+              TextFormField(
+                controller: _name,
+                decoration: const InputDecoration(labelText: 'Name'),
+                validator: (v) => v!.isEmpty ? 'Required' : null,
+              ),
+              TextFormField(
+                controller: _age,
+                decoration: const InputDecoration(labelText: 'Age'),
+                keyboardType: TextInputType.number,
+              ),
+              TextFormField(
+                controller: _gender,
+                decoration: const InputDecoration(labelText: 'Gender'),
+              ),
               DropdownButtonFormField<String>(
                 value: _occupation.text.isEmpty ? 'Student' : _occupation.text,
                 items: const [
-                  DropdownMenuItem(value: 'Student', child: Text('Student')),
-                  DropdownMenuItem(value: 'Farmer', child: Text('Farmer')),
-                  DropdownMenuItem(value: 'Entrepreneur', child: Text('Entrepreneur')),
-                  DropdownMenuItem(value: 'Laborer', child: Text('Laborer')),
-                  DropdownMenuItem(value: 'Other', child: Text('Other')),
+                  DropdownMenuItem(value: 'Student', child: TranslatedText('Student')),
+                  DropdownMenuItem(value: 'Farmer', child: TranslatedText('Farmer')),
+                  DropdownMenuItem(value: 'Entrepreneur', child: TranslatedText('Entrepreneur')),
+                  DropdownMenuItem(value: 'Laborer', child: TranslatedText('Laborer')),
+                  DropdownMenuItem(value: 'Other', child: TranslatedText('Other')),
                 ],
                 onChanged: (v) => setState(() => _occupation.text = v ?? 'Student'),
                 decoration: const InputDecoration(labelText: 'Occupation'),
               ),
-              TextFormField(controller: _income, decoration: const InputDecoration(labelText: 'Income')),
-              TextFormField(controller: _state, decoration: const InputDecoration(labelText: 'State')),
-              TextFormField(controller: _district, decoration: const InputDecoration(labelText: 'District')),
+              TextFormField(
+                controller: _income,
+                decoration: const InputDecoration(labelText: 'Income'),
+              ),
+              TextFormField(
+                controller: _state,
+                decoration: const InputDecoration(labelText: 'State'),
+              ),
+              TextFormField(
+                controller: _district,
+                decoration: const InputDecoration(labelText: 'District'),
+              ),
               const SizedBox(height: 12),
               DropdownButtonFormField<String>(
                 value: _lang,
@@ -89,11 +126,17 @@ class _ProfileInfoPageState extends State<ProfileInfoPage> {
                   DropdownMenuItem(value: 'te', child: Text('Telugu')),
                   DropdownMenuItem(value: 'ml', child: Text('Malayalam')),
                 ],
-                onChanged: (v) => setState(() => _lang = v ?? 'en'),
+                onChanged: (v) {
+                   setState(() => _lang = v ?? 'en');
+                   context.read<UserProfileProvider>().setLanguage(v ?? 'en');
+                },
                 decoration: const InputDecoration(labelText: 'Preferred Language'),
               ),
               const SizedBox(height: 16),
-              ElevatedButton(onPressed: _save, child: const Text('Save & Continue')),
+              ElevatedButton(
+                onPressed: _save,
+                child: const TranslatedText('Save & Continue'),
+              ),
             ],
           ),
         ),

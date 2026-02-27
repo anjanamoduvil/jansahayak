@@ -18,6 +18,7 @@ dependencies:
   translator: ^0.1.7
   shared_preferences: ^2.0.6
   google_fonts: ^2.1.0
+  url_launcher: ^6.0.20
 
 dev_dependencies:
   flutter_test:
