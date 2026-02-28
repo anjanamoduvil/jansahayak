@@ -36,10 +36,33 @@ class PolicyService {
       {required String query, Map<String, dynamic>? profile}) async {
     final schemes = await fetchSchemes();
     final lowerQuery = query.toLowerCase();
+    final stopWords = {'schemes', 'government', 'policy', 'help', 'with', 'about', 'find', 'show', 'list'};
+    final queryWords = lowerQuery
+        .split(RegExp(r'[\s,.\?\!]+'))
+        .where((w) => w.length >= 3 && !stopWords.contains(w))
+        .toList();
+    
+    if (queryWords.isEmpty && lowerQuery.isNotEmpty) {
+      queryWords.add(lowerQuery);
+    }
+
     return schemes.where((s) {
-      return s.name.toLowerCase().contains(lowerQuery) ||
-          s.description.toLowerCase().contains(lowerQuery) ||
-          s.category.toLowerCase().contains(lowerQuery);
+      final name = s.name.toLowerCase();
+      final desc = s.description.toLowerCase();
+      final cat = s.category.toLowerCase();
+      final state = s.state.toLowerCase();
+
+      for (final word in queryWords) {
+        // Use word boundary to avoid "hi" matching "this"
+        final regExp = RegExp('\\b${RegExp.escape(word)}\\b', caseSensitive: false);
+        if (regExp.hasMatch(name) || 
+            regExp.hasMatch(desc) || 
+            regExp.hasMatch(cat) || 
+            regExp.hasMatch(state)) {
+          return true;
+        }
+      }
+      return false;
     }).toList();
   }
 }

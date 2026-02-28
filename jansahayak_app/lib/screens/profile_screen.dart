@@ -15,12 +15,17 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   late TextEditingController _name;
   late TextEditingController _age;
-  late TextEditingController _gender;
-  late TextEditingController _occupation;
   late TextEditingController _income;
-  late TextEditingController _state;
-  late TextEditingController _district;
+  
+  late String _genderVal;
+  late String _occupationVal;
+  late String _stateVal;
+  late String _districtVal;
   late String _language;
+
+  final List<String> _genders = ['Male', 'Female', 'Other'];
+  final List<String> _states = ['Kerala', 'Tamil Nadu', 'Karnataka', 'Rajasthan', 'Delhi', 'Other'];
+  final List<String> _districts = ['Thiruvananthapuram', 'Kochi', 'Kozhikode', 'Chennai', 'Bangalore', 'Mumbai', 'Other'];
 
   @override
   void initState() {
@@ -28,11 +33,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final profile = context.read<UserProfileProvider>().profile;
     _name = TextEditingController(text: profile?.name ?? '');
     _age = TextEditingController(text: profile?.age.toString() ?? '');
-    _gender = TextEditingController(text: profile?.gender ?? '');
-    _occupation = TextEditingController(text: profile?.occupation ?? '');
     _income = TextEditingController(text: profile?.income ?? '');
-    _state = TextEditingController(text: profile?.state ?? '');
-    _district = TextEditingController(text: profile?.district ?? '');
+    
+    _genderVal = _genders.contains(profile?.gender) ? profile!.gender : 'Other';
+    _occupationVal = (profile?.occupation.isNotEmpty ?? false) ? profile!.occupation : 'Student';
+    _stateVal = _states.contains(profile?.state) ? profile!.state : 'Other';
+    _districtVal = _districts.contains(profile?.district) ? profile!.district : 'Other';
     _language = profile?.preferredLanguage ?? 'en';
   }
 
@@ -40,11 +46,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   void dispose() {
     _name.dispose();
     _age.dispose();
-    _gender.dispose();
-    _occupation.dispose();
     _income.dispose();
-    _state.dispose();
-    _district.dispose();
     super.dispose();
   }
 
@@ -52,11 +54,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final updated = UserInfoModel(
       name: _name.text,
       age: int.tryParse(_age.text) ?? 0,
-      gender: _gender.text,
-      occupation: _occupation.text,
+      gender: _genderVal,
+      occupation: _occupationVal,
       income: _income.text,
-      state: _state.text,
-      district: _district.text,
+      state: _stateVal,
+      district: _districtVal,
       preferredLanguage: _language,
     );
     context.read<UserProfileProvider>().setProfile(updated);
@@ -75,11 +77,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: [
             TextField(controller: _name, decoration: const InputDecoration(label: TranslatedText('Name'))),
             TextField(controller: _age, decoration: const InputDecoration(label: TranslatedText('Age')), keyboardType: TextInputType.number),
-            TextField(controller: _gender, decoration: const InputDecoration(label: TranslatedText('Gender'))),
-            TextField(controller: _occupation, decoration: const InputDecoration(label: TranslatedText('Occupation'))),
+            DropdownButtonFormField<String>(
+              value: _genderVal,
+              items: _genders.map((g) => DropdownMenuItem(value: g, child: TranslatedText(g))).toList(),
+              onChanged: (v) => setState(() => _genderVal = v ?? 'Other'),
+              decoration: const InputDecoration(label: TranslatedText('Gender')),
+            ),
+            DropdownButtonFormField<String>(
+              value: _occupationVal,
+              items: const [
+                DropdownMenuItem(value: 'Student', child: TranslatedText('Student')),
+                DropdownMenuItem(value: 'Farmer', child: TranslatedText('Farmer')),
+                DropdownMenuItem(value: 'Entrepreneur', child: TranslatedText('Entrepreneur')),
+                DropdownMenuItem(value: 'Laborer', child: TranslatedText('Laborer')),
+                DropdownMenuItem(value: 'Other', child: TranslatedText('Other')),
+              ],
+              onChanged: (v) => setState(() => _occupationVal = v ?? 'Student'),
+              decoration: const InputDecoration(label: TranslatedText('Occupation')),
+            ),
             TextField(controller: _income, decoration: const InputDecoration(label: TranslatedText('Income'))),
-            TextField(controller: _state, decoration: const InputDecoration(label: TranslatedText('State'))),
-            TextField(controller: _district, decoration: const InputDecoration(label: TranslatedText('District'))),
+            DropdownButtonFormField<String>(
+              value: _stateVal,
+              items: _states.map((s) => DropdownMenuItem(value: s, child: TranslatedText(s))).toList(),
+              onChanged: (v) => setState(() => _stateVal = v ?? 'Other'),
+              decoration: const InputDecoration(label: TranslatedText('State')),
+            ),
+            DropdownButtonFormField<String>(
+              value: _districtVal,
+              items: _districts.map((d) => DropdownMenuItem(value: d, child: TranslatedText(d))).toList(),
+              onChanged: (v) => setState(() => _districtVal = v ?? 'Other'),
+              decoration: const InputDecoration(label: TranslatedText('District')),
+            ),
             const SizedBox(height: 12),
             DropdownButtonFormField<String>(
               value: _language,

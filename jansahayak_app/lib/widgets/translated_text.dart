@@ -21,18 +21,25 @@ class _TranslatedTextState extends State<TranslatedText> {
 
   void _translate() {
     final targetLang = context.read<UserProfileProvider>().language;
+    debugPrint('TranslatedText: Attempting translation for "${widget.text}" to "$targetLang"');
+    
     if (targetLang == 'en' || widget.text.isEmpty) {
+      debugPrint('TranslatedText: Skipping (English or empty)');
       if (mounted) setState(() => _translatedText = widget.text);
       return;
     }
 
-    if (_lastText == widget.text && _lastLang == targetLang) return;
+    if (_lastText == widget.text && _lastLang == targetLang) {
+      debugPrint('TranslatedText: Returning cached state result');
+      return;
+    }
 
     _lastText = widget.text;
     _lastLang = targetLang;
 
     TranslationService.translate(widget.text, targetLang).then((result) {
       if (mounted) {
+        debugPrint('TranslatedText: Received result for "${widget.text}": "$result"');
         setState(() {
           _translatedText = result;
         });

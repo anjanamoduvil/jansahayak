@@ -6,6 +6,7 @@ import '../widgets/translated_text.dart';
 import 'scheme_details_page.dart';
 import 'profile_screen.dart';
 import 'language_selection_page.dart';
+import 'chatbot_screen.dart';
 
 class HomePage extends StatefulWidget {
   static const route = '/home';
@@ -89,6 +90,10 @@ class _HomePageState extends State<HomePage> {
                     );
                   },
                 ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.pushNamed(context, ChatbotScreen.route),
+        child: const Icon(Icons.chat),
+      ),
     );
   }
 }
