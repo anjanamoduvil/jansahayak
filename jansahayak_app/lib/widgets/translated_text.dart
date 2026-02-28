@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import '../providers/user_profile_provider.dart';
 import '../services/translation_service.dart';
 
-class TranslatedText extends StatelessWidget {
+class TranslatedText extends StatefulWidget {
   final String text;
   final TextStyle? style;
   final TextAlign? textAlign;
@@ -11,22 +11,61 @@ class TranslatedText extends StatelessWidget {
   const TranslatedText(this.text, {Key? key, this.style, this.textAlign}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    final targetLang = context.select((UserProfileProvider p) => p.language);
+  State<TranslatedText> createState() => _TranslatedTextState();
+}
 
-    if (targetLang == 'en') {
-      return Text(text, style: style, textAlign: textAlign);
+class _TranslatedTextState extends State<TranslatedText> {
+  String? _translatedText;
+  String? _lastText;
+  String? _lastLang;
+
+  void _translate() {
+    final targetLang = context.read<UserProfileProvider>().language;
+    if (targetLang == 'en' || widget.text.isEmpty) {
+      if (mounted) setState(() => _translatedText = widget.text);
+      return;
     }
 
-    return FutureBuilder<String>(
-      future: TranslationService.translate(text, targetLang),
-      builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          return Text(snapshot.data!, style: style, textAlign: textAlign);
-        }
-        // Show original text while translating
-        return Text(text, style: style, textAlign: textAlign);
-      },
+    if (_lastText == widget.text && _lastLang == targetLang) return;
+
+    _lastText = widget.text;
+    _lastLang = targetLang;
+
+    TranslationService.translate(widget.text, targetLang).then((result) {
+      if (mounted) {
+        setState(() {
+          _translatedText = result;
+        });
+      }
+    });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _translate();
+  }
+
+  @override
+  void didUpdateWidget(TranslatedText oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.text != widget.text) {
+      _translate();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // Re-run translate if language changes (since didChangeDependencies might not catch provider updates if not watching)
+    final currentLang = context.watch<UserProfileProvider>().language;
+    if (_lastLang != currentLang) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _translate());
+    }
+
+    return Text(
+      _translatedText ?? widget.text,
+      style: widget.style,
+      textAlign: widget.textAlign,
     );
   }
 }

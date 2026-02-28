@@ -7,7 +7,7 @@ import 'profile_info_page.dart';
 
 class LoginPage extends StatefulWidget {
   static const route = '/login';
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -17,12 +17,20 @@ class _LoginPageState extends State<LoginPage> {
   final _controller = TextEditingController();
   bool _loading = false;
   String _occupation = 'Student';
+  String _category = 'General'; // <-- Add this line
 
   final List<String> _occupations = [
     'Student',
     'Farmer',
     'Entrepreneur',
     'Laborer',
+    'Other'
+  ];
+
+  final List<String> _categories = [ // <-- Add this list
+    'General',
+    'OBC',
+    'ST',
     'Other'
   ];
 
@@ -37,9 +45,11 @@ class _LoginPageState extends State<LoginPage> {
     await context.read<AuthProvider>().login(_controller.text);
     if (!mounted) return;
     
-    // Store occupation in profile provider
+    // Store occupation and category in profile provider
     context.read<UserProfileProvider>().setOccupation(_occupation);
-    
+    // You can add a similar method for category if needed:
+    // context.read<UserProfileProvider>().setCategory(_category);
+
     setState(() => _loading = false);
     Navigator.pushReplacementNamed(context, ProfileInfoPage.route);
   }
@@ -55,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: _controller,
               decoration: const InputDecoration(
-                labelText: 'Phone or Email',
+                label: TranslatedText('Phone or Email'),
               ),
             ),
             const SizedBox(height: 16),
@@ -73,7 +83,25 @@ class _LoginPageState extends State<LoginPage> {
                 });
               },
               decoration: const InputDecoration(
-                labelText: 'Occupation',
+                label: TranslatedText('Occupation'),
+              ),
+            ),
+            const SizedBox(height: 16),
+            DropdownButtonFormField<String>( // <-- Add this widget
+              value: _category,
+              items: _categories.map((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: TranslatedText(value),
+                );
+              }).toList(),
+              onChanged: (newValue) {
+                setState(() {
+                  _category = newValue!;
+                });
+              },
+              decoration: const InputDecoration(
+                label: TranslatedText('Category'),
               ),
             ),
             const SizedBox(height: 24),

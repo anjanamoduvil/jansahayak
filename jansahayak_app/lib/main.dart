@@ -9,6 +9,7 @@ import 'screens/login_page.dart';
 import 'screens/profile_info_page.dart';
 import 'screens/home_page.dart';
 import 'screens/scheme_details_page.dart';
+import 'screens/profile_screen.dart'; // <-- Add this import
 
 void main() {
   runApp(const JanSahayakApp());
@@ -36,6 +37,7 @@ class JanSahayakApp extends StatelessWidget {
           ProfileInfoPage.route: (_) => const ProfileInfoPage(),
           HomePage.route: (_) => const HomePage(),
           SchemeDetailsPage.route: (_) => const SchemeDetailsPage(),
+          ProfileScreen.route: (_) => const ProfileScreen(), // <-- Add this route
         },
       ),
     );

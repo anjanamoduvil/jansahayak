@@ -80,17 +80,17 @@ class _ProfileInfoPageState extends State<ProfileInfoPage> {
             children: [
               TextFormField(
                 controller: _name,
-                decoration: const InputDecoration(labelText: 'Name'),
+                decoration: const InputDecoration(label: TranslatedText('Name')),
                 validator: (v) => v!.isEmpty ? 'Required' : null,
               ),
               TextFormField(
                 controller: _age,
-                decoration: const InputDecoration(labelText: 'Age'),
+                decoration: const InputDecoration(label: TranslatedText('Age')),
                 keyboardType: TextInputType.number,
               ),
               TextFormField(
                 controller: _gender,
-                decoration: const InputDecoration(labelText: 'Gender'),
+                decoration: const InputDecoration(label: TranslatedText('Gender')),
               ),
               DropdownButtonFormField<String>(
                 value: _occupation.text.isEmpty ? 'Student' : _occupation.text,
@@ -102,19 +102,19 @@ class _ProfileInfoPageState extends State<ProfileInfoPage> {
                   DropdownMenuItem(value: 'Other', child: TranslatedText('Other')),
                 ],
                 onChanged: (v) => setState(() => _occupation.text = v ?? 'Student'),
-                decoration: const InputDecoration(labelText: 'Occupation'),
+                decoration: const InputDecoration(label: TranslatedText('Occupation')),
               ),
               TextFormField(
                 controller: _income,
-                decoration: const InputDecoration(labelText: 'Income'),
+                decoration: const InputDecoration(label: TranslatedText('Income')),
               ),
               TextFormField(
                 controller: _state,
-                decoration: const InputDecoration(labelText: 'State'),
+                decoration: const InputDecoration(label: TranslatedText('State')),
               ),
               TextFormField(
                 controller: _district,
-                decoration: const InputDecoration(labelText: 'District'),
+                decoration: const InputDecoration(label: TranslatedText('District')),
               ),
               const SizedBox(height: 12),
               DropdownButtonFormField<String>(
@@ -130,7 +130,7 @@ class _ProfileInfoPageState extends State<ProfileInfoPage> {
                    setState(() => _lang = v ?? 'en');
                    context.read<UserProfileProvider>().setLanguage(v ?? 'en');
                 },
-                decoration: const InputDecoration(labelText: 'Preferred Language'),
+                decoration: const InputDecoration(label: TranslatedText('Preferred Language')),
               ),
               const SizedBox(height: 16),
               ElevatedButton(

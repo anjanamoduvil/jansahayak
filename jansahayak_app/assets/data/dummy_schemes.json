@@ -1,143 +1,702 @@
 [
   {
-    "id": "1",
+    "id": "S1",
+    "name": "National Scholarship Portal",
+    "category": "Student",
+    "description": "The National Scholarship Portal (NSP) is a mission-mode project under the National e-Governance Plan (NeGP). It serves as a unified digital platform that provides a one-stop solution for various scholarship schemes offered by the Central Government, State Governments, and other Government agencies like AICTE and UGC. The portal was launched to create a transparent, accountable, and efficient system for the disbursement of scholarship funds directly to the bank accounts of deserving students (Direct Benefit Transfer). Since its inception, NSP has simplified the entire lifecycle of scholarship management, from student registration and application submission to verification by educational institutions and final payment. It hosts over 50 schemes from different ministries, benefiting millions of students annually across various educational levels, including school, college, and professional studies.",
+    "eligibility": "Open to all Indian students enrolled in recognized schools, colleges, and universities. Specific eligibility criteria (income, merit, category) vary depending on the individual scheme selected within the portal.",
+    "documents": [
+      "Aadhaar Card",
+      "Academic Marksheets of previous qualifying exam",
+      "Fee Receipt of current course",
+      "Bank Account details (linked with Aadhaar)",
+      "Income Certificate issued by competent authority",
+      "Caste Certificate (if applicable)"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "Ministry of Education"
+  },
+  {
+    "id": "S2",
+    "name": "Post-Matric Scholarship",
+    "category": "Student",
+    "description": "The Post-Matric Scholarship scheme is a centrally sponsored initiative aimed at providing significant financial assistance to students belonging to Scheduled Castes (SC), Scheduled Tribes (ST), and Other Backward Classes (OBC). The primary goal is to empower these communities by enabling them to pursue higher education at the post-matriculation or post-secondary stage, thereby improving their representation in higher education and professional sectors. The scholarship covers essential costs such as tuition fees, maintenance allowance, study tour charges, thesis typing/printing charges, and book allowance. It is instrumental in reducing the dropout rate among students from marginalized backgrounds who often face financial barriers to completing their undergraduate, postgraduate, and doctoral degrees. The funds are disbursed directly to the students' bank accounts, ensuring a seamless and corruption-free process.",
+    "eligibility": "Students belonging to SC/ST/OBC categories whose annual family income does not exceed the threshold specified by their respective State/UT governments (typically ₹2.5 Lakhs for SC/ST and ₹1.5 Lakhs for OBC). Pursuing studies in recognized institutions.",
+    "documents": [
+      "Caste Certificate",
+      "Annual Income Certificate",
+      "Aadhaar Card",
+      "Residential Proof / Domicile Certificate",
+      "Proof of admission in a recognized college/university",
+      "Self-attested marksheets of previous years"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "Ministry of Social Justice & Empowerment"
+  },
+  {
+    "id": "S3",
+    "name": "Pre-Matric Scholarship",
+    "category": "Student",
+    "description": "Pre-Matric scholarship schemes are designed to support students from socio-economically weaker sections during their formative schooling years. By providing financial aid to students from Class 1 to 10, the scheme aims to reduce the financial burden on parents, encourage regular school attendance, and prevent children from dropping out due to poverty. The scholarship covers basic educational expenses and provides a maintenance allowance, which is particularly beneficial for students from minority communities, SC/ST, and other disadvantaged groups. This early support is crucial for building a strong educational foundation and ensuring that every child has the opportunity to complete their basic school education, regardless of their family's economic status. It also serves as an incentive for parents to prioritize their children's education over immediate household labor needs.",
+    "eligibility": "Students studying in a government or recognized private school from Class 1 to 10. Annual family income of parents shouldn't exceed ₹1 Lakh per annum (may vary by state).",
+    "documents": [
+      "School Identity Card",
+      "Income Certificate of parents",
+      "Aadhaar Card of the student",
+      "Caste Certificate (if applying under a specific category)",
+      "Bank Account details of student or parent (if minor)"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "Ministry of Education"
+  },
+  {
+    "id": "S4",
+    "name": "E-Grantz Kerala",
+    "category": "Student",
+    "description": "E-Grantz is a state-of-the-art web-based application developed by the Government of Kerala to streamline the distribution of educational assistance to students across the state. It acts as a comprehensive portal for various grants and scholarships provided to students belonging to Scheduled Castes (SC), Scheduled Tribes (ST), Other Eligible Communities (OEC), and Other Backward Classes (OBC). The system ensures timely and transparent disbursement of funds for a wide range of courses, from Higher Secondary (Plus One/Plus Two) to Undergraduate, Postgraduate, and even Professional or Research degrees (Ph.D.). By centralizing the application and verification process, E-Grantz reduces administrative delays and ensures that financial aid reaches the students exactly when they need it most. It is a cornerstone of Kerala's commitment to social justice and educational empowerment for all its citizens.",
+    "eligibility": "Students must be permanent residents of Kerala. Belonging to SC, ST, OEC, or other backward communities. Enrolled in recognized educational institutions in Kerala or outside for professional courses.",
+    "documents": [
+      "Aadhaar Card",
+      "Caste/Community Certificate",
+      "Income Certificate (for non-SC/ST categories)",
+      "Details of the course and institution",
+      "Previous year's marksheets",
+      "Nativity Certificate"
+    ],
+    "applyLink": "https://egrantz.kerala.gov.in",
+    "state": "Kerala",
+    "handledBy": "Kerala SC Development Dept"
+  },
+  {
+    "id": "S5",
+    "name": "INSPIRE Scholarship",
+    "category": "Student",
+    "description": "Innovation in Science Pursuit for Inspired Research (INSPIRE) is an flagship program of the Department of Science & Technology (DST), Government of India. The 'Scholarship for Higher Education' (SHE) component of this program is specifically designed to attract and retain talented youth in the field of Natural and Basic Sciences. It recognizes the top academic performers in Class 12 examinations and provides them with substantial financial support to pursue undergraduate and postgraduate degrees in science-intensive programs. Beyond just financial aid, the INSPIRE program provides opportunities for summer research internships with top scientists, mentoring sessions, and exposure to advanced research labs. The ultimate goal is to nurture a new generation of scientists and researchers who will contribute to India's scientific and technological advancement globally.",
+    "eligibility": "Students who are within the top 1% at Class 12 examination in any State/Central Board in India. Must be pursuing courses in Natural and Basic Sciences at the B.Sc., B.S., and Int. M.Sc./M.S. level.",
+    "documents": [
+      "Class 12 Marksheet",
+      "Endorsement Certificate signed by the Head of the Institution",
+      "Aadhaar Card",
+      "Eligibility Note/Advisory Note from the Board",
+      "Certificate from Principal of the Degree College"
+    ],
+    "applyLink": "https://online-inspire.gov.in",
+    "state": "National",
+    "handledBy": "DST"
+  },
+  {
+    "id": "S6",
+    "name": "AICTE Pragati Scholarship",
+    "category": "Student",
+    "description": "The Pragati Scholarship Scheme is an initiative by the All India Council for Technical Education (AICTE) aimed at providing financial wings to girl students to pursue technical education. Recognizing that women's education is pivotal for the overall development of the nation, AICTE provides this scholarship to encourage meritorious girls to enroll in professional Diploma and Degree courses in engineering, technology, architecture, and other technical fields. The scholarship amount of ₹50,000 per annum is intended to cover tuition fees and other educational expenses like books, equipment, and software. By incentivizing technical education for girls, the Pragati scheme aims to bridge the gender gap in STEM (Science, Technology, Engineering, and Mathematics) fields and empower women with the skills necessary for a successful career in the modern economy.",
+    "eligibility": "Up to two girl children per family are eligible. Annual family income should not exceed ₹8 Lakh. Must be admitted in first year or second year (through lateral entry) of Diploma/Degree level course in an AICTE approved institution.",
+    "documents": [
+      "Aadhaar Card",
+      "SSC/HSC Marksheet",
+      "Family Income Certificate",
+      "Admission letter from central/state counseling",
+      "Tuition fee receipt",
+      "Declaration from parents that information provided is true"
+    ],
+    "applyLink": "https://aicte-india.org",
+    "state": "National",
+    "handledBy": "AICTE"
+  },
+  {
+    "id": "S7",
+    "name": "AICTE Saksham Scholarship",
+    "category": "Student",
+    "description": "The Saksham Scholarship Scheme is a humanitarian effort by the AICTE to support and encourage specially-abled children to pursue technical education. The scheme is designed to ensure that physical or sensory challenges do not hinder a talented student's journey toward professional excellence. By providing a scholarship of ₹50,000 annually, AICTE helps cover the additional costs often associated with specialized education for children with disabilities, such as assistive devices, specialized software, and accessible learning materials. Saksham is more than just a financial grant; it is a movement towards creating a more inclusive and equitable technical education ecosystem in India, where every student, regardless of their physical abilities, has the opportunity to dream big and build a successful future in technology and engineering.",
+    "eligibility": "Specially-abled students having a disability of not less than 40%. Annual family income from all sources should not exceed ₹8 Lakh per annum.",
+    "documents": [
+      "Disability Certificate issued by competent government authority",
+      "Aadhaar Card",
+      "Income Certificate",
+      "Tuition fee receipt",
+      "Admission letter from a recognized technical college/university"
+    ],
+    "applyLink": "https://aicte-india.org",
+    "state": "National",
+    "handledBy": "AICTE"
+  },
+  {
+    "id": "S8",
+    "name": "Central Sector Scholarship",
+    "category": "Student",
+    "description": "The Central Sector Scheme of Scholarship for College and University Students is a prestigious merit-cum-means scholarship offered by the Department of Higher Education. It is specifically aimed at the 'creamy layer' of students who have excelled in their Higher Secondary (Class 12) examinations but belong to low-income families. The scholarship provides financial support throughout the duration of the student's undergraduate and even postgraduate studies, covering a significant portion of their educational costs. Selection is highly competitive, based on the percentile rank in the respective state boards or central boards. The scheme plays a vital role in ensuring that merit is not compromised by financial constraints and that the most talented youth of the country are able to access premium higher education institutions without the burden of debts.",
+    "eligibility": "Students who are above the 80th percentile of successful candidates in the relevant stream from the respective Board of Examination in Class 12. Annual family income should not exceed ₹4.5 Lakh.",
+    "documents": [
+      "Class 12 Marksheet",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Bank Passbook copy",
+      "Joining Report (duly signed by the head of the institution)",
+      "Domicile Certificate"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "Ministry of Education"
+  },
+  {
+    "id": "S9",
+    "name": "Maulana Azad Scholarship",
+    "category": "Student",
+    "description": "The Begum Hazrat Mahal National Scholarship, popularly known as the Maulana Azad Scholarship, is a dedicated financial aid program for meritorious girl students belonging to notified minority communities (Muslims, Christians, Buddhists, Jains, Parsis, and Sikhs). The scheme recognizes that minority girls often face dual challenges in accessing education and aims to promote their empowerment through literacy. By providing scholarships from Class 9 to 12, the scheme helps families sustain their daughters' education during the critical secondary school years. The scholarship covers tuition fees and allows for the purchase of essential educational resources. It has been a successful instrument in improving the educational status of minority women and fostering a more inclusive society where every young girl, regardless of her faith, can aspire to academic success.",
+    "eligibility": "Minority girl students studying in Classes 9 to 12. Must have scored at least 50% marks or equivalent grade in top previous examination. Annual family income should not exceed ₹2 Lakh.",
+    "documents": [
+      "Self-certified Minority Certificate",
+      "Marksheet of previous examination",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Bank Account details"
+    ],
+    "applyLink": "https://maef.nic.in",
+    "state": "National",
+    "handledBy": "MAEF"
+  },
+  {
+    "id": "S10",
+    "name": "State Merit Scholarship Kerala",
+    "category": "Student",
+    "description": "Offered by the Directorate of Collegiate Education, the State Merit Scholarship is a flagship initiative of the Government of Kerala to reward academic excellence in the state. The scholarship is awarded to students based on their performance in the Higher Secondary (Plus Two) examinations for their undergraduate (B.A./B.Sc./B.Com and others) and postgraduate studies. Kerala, known for its high literacy rate and focus on education, uses this scholarship to further motivate students to achieve higher grades and pursue advanced learning in various disciplines. The scholarship amount is credited periodically to the students' bank accounts through a transparent online system. It is a highly respected award that reflects the student's hard work and the state's investment in its human capital.",
+    "eligibility": "Students must be natives of Kerala. Should be pursuing a regular course in Government/Aided Colleges or University Departments. Must have secured 50% marks in the qualifying examination. Family annual income should be within the specified limits.",
+    "documents": [
+      "Aadhaar Card",
+      "Qualifying Exam Marksheet",
+      "Annual Income Certificate",
+      "Nativity Certificate",
+      "Bank Account details",
+      "Fee receipt from the institution"
+    ],
+    "applyLink": "https://dcescholarship.kerala.gov.in",
+    "state": "Kerala",
+    "handledBy": "Kerala Higher Education Dept"
+  },
+  {
+    "id": "S11",
+    "name": "Vidya Lakshmi Education Loan",
+    "category": "Student",
+    "description": "Vidya Lakshmi is a pioneering digital portal that serves as a single window for students to access education loans from various banks across India. Developed with the guidance of the Ministry of Finance and the Ministry of Education, the portal aims to provide a transparent and efficient mechanism for students to view, apply for, and track their education loan applications online. Students can fill out a single Common Education Loan Application Form (CELAF) and apply to multiple banks simultaneously. The platform also provides information on various education loan schemes offered by banks, including interest rates and repayment terms. Vidya Lakshmi is a critical tool for financial inclusion in education, making it easier for students from all economic backgrounds to fund their dreams of higher studies in India or abroad without getting lost in complex banking procedures.",
+    "eligibility": "Indian students who have secured admission to higher education in India or abroad through entrance test/merit-based selection process after completion of HSC (10+2 or equivalent).",
+    "documents": [
+      "Aadhaar Card / PAN Card",
+      "Admission Letter from the Institution",
+      "Detailed structure of fees",
+      "KYC documents of parents/guardians",
+      "Academic marksheets (10th, 12th, or Graduation)",
+      "Income proof of co-borrower"
+    ],
+    "applyLink": "https://www.vidyalakshmi.co.in",
+    "state": "National",
+    "handledBy": "NSDL"
+  },
+  {
+    "id": "S12",
+    "name": "National Means-cum-Merit Scholarship",
+    "category": "Student",
+    "description": "The National Means-cum-Merit Scholarship (NMMS) is a centrally sponsored scheme that targets meritorious students from economically weaker sections at a very critical stage of their schooling. The primary objective is to prevent talented students from dropping out after Class 8 due to financial difficulties and to encourage them to continue their secondary education (Class 9 to 12). Each year, 100,000 students are selected through a national-level examination. The selected students receive a monthly scholarship amount to support their education costs. This scheme has been highly effective in identifying 'hidden gems' in government and aided schools and ensuring that their potential is not extinguished by poverty. It fosters a competitive spirit among students from rural and underprivileged backgrounds and provides them with a viable path toward higher education.",
+    "eligibility": "Students of Class 9 who have secured 55% or more marks in Class 8 (relaxable by 5% for SC/ST). Annual parental income should not exceed ₹3.5 Lakh. Must be studying in Government, Local Body or Aided school.",
+    "documents": [
+      "Income Certificate of parents",
+      "Class 8 Marksheet",
+      "Caste Certificate (if applicable)",
+      "Disability Certificate (if applicable)",
+      "Aadhaar Card",
+      "Proof of admission in Class 9"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "Ministry of Education"
+  },
+  {
+    "id": "S13",
+    "name": "Kishore Vaigyanik Protsahan Yojana",
+    "category": "Student",
+    "description": "The Kishore Vaigyanik Protsahan Yojana (KVPY) is one of India's most prestigious national fellowships for students pursuing basic science research. It was initiated by the Department of Science and Technology (DST) and is managed by the Indian Institute of Science (IISc), Bangalore. The program aims to identify and encourage students with a high aptitude and passion for scientific research at the Higher Secondary and undergraduate levels. Selection consists of a rigorous aptitude test followed by an interview by top scientists. 'KVPY Fellows' receive generous monthly stipends and annual contingency grants to support their studies in basic sciences through the B.Sc./B.S./B.Stat./B.Math./Int. M.Sc./M.S. levels. Beyond financial support, the program offers fellows the chance to participate in science camps, attend workshops, and gain early exposure to the frontiers of scientific inquiry in the country's best research laboratories.",
+    "eligibility": "Students studying in Class 11, 12 and first year of any undergraduate program in Basic Sciences (B.Sc./B.S./B.Stat./B.Math./Int. M.Sc./M.S.). Selection is based on an aptitude test and interview.",
+    "documents": [
+      "Class 10/12 Marksheet",
+      "Caste Certificate (if applicable)",
+      "Aadhaar Card",
+      "Scanned signature and photograph",
+      "Medical Certificate for PWD candidates",
+      "Admit card of KVPY exam"
+    ],
+    "applyLink": "http://kvpy.iisc.ernet.in",
+    "state": "National",
+    "handledBy": "DST"
+  },
+  {
+    "id": "S14",
+    "name": "NTSE Scholarship",
+    "category": "Student",
+    "description": "The National Talent Search Examination (NTSE) is a flagship national-level examination conducted by the National Council of Educational Research and Training (NCERT) to identify and nurture talented students in secondary schools. It is one of the oldest and most competitive scholarship programs in India. The selection process is two-staged: Stage 1 at the state level and Stage 2 at the national level. Students who qualify for the national level are awarded scholarships for their entire academic career, from Class 11 through to the Ph.D. level (for science and social sciences) or professional degrees in medicine and engineering. The scholarship amount increases at higher levels of education. NTSE not only provides financial assistance but also confers a great deal of prestige upon the 'NTSE Scholars,' who are recognized as some of the brightest minds in the country.",
+    "eligibility": "Students studying in Class 10 in any recognized school are eligible appearing for Stage 1 (State level). Stage 2 is conducted by NCERT for state-level qualifiers.",
+    "documents": [
+      "Class 9 Marksheet",
+      "Identity proof (School ID/Aadhaar)",
+      "Caste Certificate (if applicable)",
+      "Domicile Certificate",
+      "Income Certificate"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "NCERT"
+  },
+  {
+    "id": "S15",
+    "name": "MOMA Scholarship",
+    "category": "Student",
+    "description": "The Ministry of Minority Affairs (MOMA) provides a comprehensive set of scholarship schemes—Pre-Matric, Post-Matric, and Merit-cum-Means—to support students belonging to notified minority communities (Muslims, Christians, Sikhs, Buddhists, Jains, and Parsis). These schemes are a crucial part of the government's efforts to promote educational advancement and socio-economic empowerment among minorities. The Pre-Matric scheme focuses on school-level education, the Post-Matric scheme supports higher secondary and collegiate education, and the Merit-cum-Means scholarship is specifically for students pursuing professional and technical courses at the undergraduate and postgraduate levels. By significantly reducing the financial burden of tuition fees and living expenses, MOMA scholarships help minority students access quality education and professional career paths, thereby fostering their integration into the mainstream economy and society.",
+    "eligibility": "Students belonging to Muslim, Christian, Sikh, Buddhist, Jain, or Parsi communities. Must have secured at least 50% marks in the previous final examination. Annual income limits vary: ₹1L (Pre-Matric), ₹2L (Post-Matric), ₹2.5L (Merit-cum-Means).",
+    "documents": [
+      "Minority Community Certificate (Self-declaration)",
+      "Income Certificate",
+      "Aadhaar Card",
+      "Marksheet of previous annual exam",
+      "Residential Certificate",
+      "Bank Account proof"
+    ],
+    "applyLink": "https://scholarships.gov.in",
+    "state": "National",
+    "handledBy": "Ministry of Minority Affairs"
+  },
+  {
+    "id": "S16",
+    "name": "Sitaram Jindal Scholarship",
+    "category": "Student",
+    "description": "The Sitaram Jindal Foundation, one of India's leading philanthropic organizations, offers the Sitaram Jindal Scholarship specifically for underprivileged yet meritorious students across the country. This scholarship aims to provide financial support to students from low-income families so they can pursue various educational streams, including regular academic courses, polytechnics, and ITIs, along with specialized professional fields like Medicine, Engineering, and Law. The Foundation emphasizes that financial inability should never prevent a student with potential from realizing their dreams. The scholarship covering everything from Class 11 to Post Graduation, is a true merit-cum-means award that has supported thousands of students in becoming self-reliant and building meaningful careers. The foundation's transparent selection process ensures that the aid reaches the most deserving and needy candidates across all states and union territories.",
+    "eligibility": "Students from Class 11 to PG level, including professional courses in Medicine, Engineering, Homeopathy, etc. Minimum percentage requirement varies by course and gender (usually 60-75%). Annual income of parents should be below ₹4 Lakh.",
+    "documents": [
+      "Aadhaar Card",
+      "Marksheet of the last examination passed",
+      "Income Certificate (BPL Card / Income Certificate from Revenue Dept)",
+      "Fee Receipts",
+      "Certificate regarding annual fees from College Principal",
+      "Hostel stay certificate (if applicable)"
+    ],
+    "applyLink": "https://sjjscholarship.org",
+    "state": "National",
+    "handledBy": "Sitaram Jindal Foundation"
+  },
+  {
+    "id": "S17",
+    "name": "Swami Vivekananda Merit Scholarship",
+    "category": "Student",
+    "description": "The Swami Vivekananda Merit-cum-Means Scholarship (SVMCM) is a flagship scheme of the Government of West Bengal, designed to provide substantial financial assistance to deserving students for higher education. Inspired by the teachings of Swami Vivekananda on empowering individuals through knowledge, the scholarship targets students from families with limited financial means who have shown exceptional academic results in their board or university examinations. The scheme covers students in Higher Secondary schools, Undergraduate colleges, Postgraduate programs, and even professional and research courses within West Bengal. One of the key highlights of the local implementation is the inclusion of the 'Kanyashree' (K3) scholarship for girls pursuing postgraduate studies in science and arts. The SVMCM is widely regarded as a significant step towards achieving universal access to quality higher education in the state and fostering a culture of academic merit.",
+    "eligibility": "Students resident in West Bengal and studying in recognized institutions within the state. Minimum marks requirement: 60% in boards/university exams. Annual family income should not exceed ₹2.5 Lakh.",
+    "documents": [
+      "Marksheet of previous qualifying board/council exam",
+      "Admission receipt",
+      "Income Certificate (not applicable for Kanyashree)",
+      "Domicile Certificate / Aadhaar Card",
+      "Copy of the first page of Bank Passbook",
+      "Passport size photograph"
+    ],
+    "applyLink": "https://svmcm.wbhed.gov.in",
+    "state": "West Bengal",
+    "handledBy": "WB Higher Education Dept"
+  },
+  {
+    "id": "S18",
+    "name": "Chief Minister's Scholarship Rajasthan",
+    "category": "Student",
+    "description": "The Rajasthan Chief Minister's Higher Education Scholarship Scheme is an initiative of the State Government to support meritorious students from Rajasthan who have excelled in their secondary education but are struggling to continue higher studies due to financial hardships. The scholarship provides financial aid for undergraduate and postgraduate courses in various streams like arts, science, commerce, and engineering. It aims to reduce the financial burden of higher education on families and encourage more students to enroll in colleges and universities. The scheme is part of Rajasthan's broader educational reforms focused on improving the gross enrollment ratio in higher education and ensuring that talent from rural and economically weaker sections is given a chance to thrive in professional environments.",
+    "eligibility": "Students who are permanent residents of Rajasthan. Must have scored 60% or more in Class 12 board exams. Annual family income must be less than ₹2.5 Lakh. Should be enrolled in a regular course in recognized college/university.",
+    "documents": [
+      "Aadhaar Card",
+      "Bhamashah/Jan-Aadhaar Card",
+      "Class 12 Marksheet",
+      "Income Certificate",
+      "Domicile Certificate",
+      "Bank Account details",
+      "Mobile number linked with Aadhaar"
+    ],
+    "applyLink": "https://hte.rajasthan.gov.in",
+    "state": "Rajasthan",
+    "handledBy": "Rajasthan Higher Education Dept"
+  },
+  {
+    "id": "S19",
+    "name": "Jharkhand e-Kalyan Scholarship",
+    "category": "Student",
+    "description": "The e-Kalyan Jharkhand portal is an online scholarship management system implemented by the Department of Scheduled Tribe, Scheduled Caste, Minority, and Backward Class Welfare, Government of Jharkhand. The primary objective is to facilitate the timely and transparent distribution of Post-Matric scholarships to students belonging to reserved categories (SC, ST, and BC). The scholarship helps these students cover major expenses like tuition fees and provides a monthly allowance. The e-Kalyan system has significantly improved the efficiency of scholarship delivery by automating the application process, institutional verification, and direct benefit transfer to students' bank accounts. It is a critical tool for social inclusion in Jharkhand, ensuring that background and financial status do not prevent students from accessing professional and higher education opportunities.",
+    "eligibility": "Permanent resident of Jharkhand. Belonging to SC, ST, or BC category. Annual family income: SC/ST (up to ₹2.5L), BC (up to ₹1.5L). Students must be studying in recognized institutions.",
+    "documents": [
+      "Caste Certificate",
+      "Income Certificate",
+      "Residential Certificate",
+      "Bonafide Certificate from School/College",
+      "Marksheet of last exam",
+      "Aadhaar Card",
+      "Bank Passbook copy"
+    ],
+    "applyLink": "https://ekalyan.cgg.gov.in",
+    "state": "Jharkhand",
+    "handledBy": "Jharkhand Welfare Dept"
+  },
+  {
+    "id": "S20",
+    "name": "Delhi Merit Scholarship",
+    "category": "Student",
+    "description": "The Government of Delhi offers the Merit-cum-Means Scholarship for minority students and other backward classes who are residents of the National Capital Territory. This scheme is aimed at supporting young learners from socio-economically disadvantaged backgrounds to pursue higher education in recognized colleges and universities in Delhi. By providing financial support towards tuition and academic fees, the Delhi government hopes to increase student participation in higher education and reduce the financial barriers to career advancement. The scheme focuses on merit as a primary criterion while ensuring that the benefits reach family income-compliant students. It is part of Delhi's broader initiative to build a knowledgeable and skilled youth population that can contribute to the growth and development of the national capital.",
+    "eligibility": "Resident of Delhi. Belonging to minority communities or SC/ST/OBC. Merit-based selection: minimum marks in qualification usually 50-60%. Annual family income limits apply based on the specific category.",
+    "documents": [
+      "Residence Proof / Domicile in Delhi",
+      "Aadhaar Card",
+      "Marksheet of previous qualifying exam",
+      "Income Certificate",
+      "Caste/Minority Certificate",
+      "Passport size photograph",
+      "Bank Account details"
+    ],
+    "applyLink": "https://edistrict.delhigovt.nic.in",
+    "state": "Delhi",
+    "handledBy": "Delhi Education Dept"
+  },
+  {
+    "id": "F1",
     "name": "PM Kisan Samman Nidhi",
     "category": "Farmer",
-    "description": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a Central Sector scheme with 100% funding from Government of India. It aims to provide income support to all landholding farmer families across the country to enable them to take care of expenses related to agriculture and allied activities as well as domestic needs.",
-    "eligibility": "1. All landholding farmer families are eligible.\n2. Exclusions: Institutional landholders, families with one or more members as serving or retired officers/employees of Government, taxpayers, professionals (doctors, lawyers, etc.), and retired pensioners with monthly pension of ₹10,000 or more.",
+    "description": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is one of the world's largest Direct Benefit Transfer (DBT) schemes, launched by the Central Government of India to provide income support to small and marginal farming families. Under this scheme, all eligible farmer families receive a guaranteed income support of ₹6,000 per year, which is paid in three equal installments of ₹2,000 directly into their bank accounts every four months. The scheme aims to supplement the financial needs of the farmers in procuring various inputs related to agriculture and allied activities, as well as domestic needs. It has been instrumental in providing a safety net for millions of farmers across India, helping them cover critical costs during the sowing and harvest seasons. PM-KISAN ensures a steady flow of credit to the rural economy and reflects the government's commitment to improving the livelihoods of the farming community.",
+    "eligibility": "Small and marginal farmer families with cultivable land holding up to 2 hectares in their name. Exclusion criteria apply to high-income taxpayers and institutional landholders.",
     "documents": [
-      "Aadhaar Card (Mandatory)",
-      "Landholding Papers/Land Tax Receipt (Pattadar Passbook)",
-      "Bank Account Details (Aadhaar Seeded)",
-      "Mobile Number linked to Aadhaar",
-      "Self-Declaration Form"
+      "Aadhaar Card (MANDATORY)",
+      "Land Holding Documents (Patta / Khatauni)",
+      "Bank Passbook (for Direct Benefit Transfer)",
+      "Mobile Number linked with Aadhaar",
+      "Citizenship Proof"
     ],
-    "applyLink": "https://pmkisan.gov.in/",
-    "state": "National"
+    "applyLink": "https://pmkisan.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
   },
   {
-    "id": "2",
-    "name": "Karshaka Pension (Kerala)",
+    "id": "F2",
+    "name": "Kisan Credit Card",
     "category": "Farmer",
-    "description": "The Kerala Agriculture Workers Pension Scheme provides monthly financial assistance to elderly agricultural workers. It is one of the oldest welfare schemes in Kerala, ensuring social security for those who spent their lives in soil cultivation.",
-    "eligibility": "1. Must be a permanent resident of Kerala.\n2. Age must be 60 years or above.\n3. Must have worked in agriculture for at least 10 years.\n4. Must be a member of the Agricultural Workers' Welfare Fund Board.\n5. Annual family income must be below ₹1 Lakh.",
+    "description": "The Kisan Credit Card (KCC) scheme is an innovative credit delivery mechanism designed to provide Indian farmers with flexible and timely access to credit for their short-term requirements during the agricultural cycle. Launched in 1998, KCC helps farmers meet their financial needs for the purchase of seeds, fertilizers, pesticides, and other inputs, along with expenses for tillage and post-harvest requirements. It also provides credit for allied activities like poultry, fisheries, and dairy. One of the key benefits of the KCC is its low interest rate (subsidized by the government) and a flexible revolving credit facility. Farmers can withdraw cash through ATMs or at bank branches. KCC eliminates the need for repeated paperwork for every crop season and protects farmers from high-interest loans provided by local moneylenders, thereby fostering a more formal and supportive financial environment in rural India.",
+    "eligibility": "All farmers - individuals/joint borrowers who are owner cultivators. Tenant farmers, oral lessees & sharecroppers. Self Help Groups (SHGs) or Joint Liability Groups (JLGs) of farmers including tenant farmers.",
     "documents": [
-      "Aadhaar Card",
-      "Ration Card (BPL/Antyodaya preferred)",
-      "Laborer Certificate from Krishi Bhavan/Panchayat",
-      "Bank Passbook (IFSC enabled)",
-      "Voter ID / Age Proof"
+      "Aadhaar Card / Voter ID / PAN Card",
+      "Land ownership documents or share-cropping proof",
+      "Passport size photograph",
+      "Filled KCC application form",
+      "No-due certificate from other banks (sometimes required)"
     ],
-    "applyLink": "https://lsgkerala.gov.in/en/welfare-pensions",
-    "state": "Kerala"
+    "applyLink": "https://pmkisan.gov.in",
+    "state": "All",
+    "handledBy": "NABARD"
   },
   {
-    "id": "3",
-    "name": "Post-Matric Scholarship (Central)",
-    "category": "Student",
-    "description": "Central scholarship for students from reserved categories to ensure no student is deprived of higher education due to financial constraints. It covers tuition, academic fees, and a fixed maintenance allowance.",
-    "eligibility": "1. Indian Nationals who are students from SC/ST/OBC/Minority categories.\n2. Pursuing studies in recognized schools/colleges (Class 11 to PhD).\n3. Family income must be under ₹2.5 Lakh per annum for SC/ST and ₹1.5-2 Lakh for OBC/Minorities.",
-    "documents": [
-      "Caste/Category Certificate",
-      "Current Year Income Certificate",
-      "Previous Class Marklist",
-      "Aadhaar Card",
-      "Institution Fee Receipt",
-      "Student Bank Passbook"
-    ],
-    "applyLink": "https://scholarships.gov.in/",
-    "state": "National"
-  },
-  {
-    "id": "4",
-    "name": "E-Grantz 3.0 (Kerala)",
-    "category": "Student",
-    "description": "E-Grantz is Kerala Government's flagship portal for educational assistance. It handles all scholarships for SC, ST, OBC, and OEC (Other Eligible Communities) students studying in Kerala, from Plus Two onwards.",
-    "eligibility": "1. Students must be residents of Kerala.\n2. Studying in government or aided colleges/universities.\n3. Attendance must be at least 75% for release of monthly stipends.\n4. Income thresholds apply for General and OBC categories.",
-    "documents": [
-      "Caste and Community Certificate",
-      "Parental Income Certificate",
-      "Bank Account seeded with Aadhaar",
-      "SSLC/Mark Sheets",
-      "Bonafide Certificate from College"
-    ],
-    "applyLink": "https://www.egrantz.kerala.gov.in/",
-    "state": "Kerala"
-  },
-  {
-    "id": "5",
-    "name": "Startup India Seed Fund",
-    "category": "Entrepreneur",
-    "description": "Providing financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization. The scheme supports innovative ideas that can solve real-world problems.",
-    "eligibility": "1. Startup recognized by DPIIT, incorporated not more than 2 years ago.\n2. Must have a viable business idea and use of technology in product/services.\n3. Not have received more than ₹10 Lakh in monetary support from other Central/State schemes.",
-    "documents": [
-      "DPIIT Recognition Certificate",
-      "Certificate of Incorporation",
-      "Brief Pitch Deck / Business Plan",
-      "Aadhaar/PAN of Directors",
-      "3-year projected financials"
-    ],
-    "applyLink": "https://seedfund.startupindia.gov.in/",
-    "state": "National"
-  },
-  {
-    "id": "6",
-    "name": "K-DISC OLOI (Kerala)",
-    "category": "Entrepreneur",
-    "description": "One Local Government One Idea (OLOI). This initiative by K-DISC encourages local bodies to promote innovative enterprises. It provides mentoring and financial links for local innovators to scale their businesses.",
-    "eligibility": "1. Aspiring entrepreneurs, SHGs, or Micro-enterprises in Kerala.\n2. Idea must address a local need or improve a local process.\n3. Must be willing to operate within the local self-government area.",
-    "documents": [
-      "Project Summary / Innovation Note",
-      "Address Proof of the Unit",
-      "Aadhaar of Promoters",
-      "Recommendation from local Panchayat/Municipality OFFICE"
-    ],
-    "applyLink": "https://kdisc.kerala.gov.in/",
-    "state": "Kerala"
-  },
-  {
-    "id": "7",
-    "name": "PM Mudra Yojana",
-    "category": "Entrepreneur",
-    "description": "Providing loans up to ₹10 Lakh to non-corporate, non-farm small/micro-enterprises. These loans are classified as Shishu, Kishore, and Tarun based on the stage of growth and funding needs of the beneficiary micro-unit.",
-    "eligibility": "1. Any Indian citizen who is eligible to borrow and has a business plan for non-farm income generating activity.\n2. Applicable for small manufacturing units, service sector units, artisans, etc.",
-    "documents": [
-      "Identity Proof (Aadhaar/DL/Voter ID)",
-      "Residence Proof",
-      "Business License/Address Proof",
-      "Project Report for the proposed business"
-    ],
-    "applyLink": "https://www.mudra.org.in/",
-    "state": "National"
-  },
-  {
-    "id": "8",
-    "name": "Subhiksha Keralam Subsidies",
+    "id": "F3",
+    "name": "PM Fasal Bima Yojana",
     "category": "Farmer",
-    "description": "A comprehensive food security project by the Kerala Government, providing subsidies for fallow land cultivation, vegetable farming, poultry, and fish farming to achieve self-reliance in food production.",
-    "eligibility": "1. Farmers, SHGs, and Kudumbashree units in Kerala.\n2. Must register on the AIMS (Agriculture Information Management System) portal.",
+    "description": "Pradhan Mantri Fasal Bima Yojana (PMFBY) is a comprehensive crop insurance scheme aimed at providing financial protection to farmers against crop loss or damage arising out of unforeseen natural events like drought, floods, pests, and diseases. It works on a low-premium model for farmers, with the balance premium being subsidized by the Central and State governments. PMFBY stabilizes the income of farmers, especially in the face of climate change and unpredictable weather patterns, and encourages them to continue farming and adopt innovative practices. The scheme uses technology like satellite imagery and drones for quick and accurate assessment of crop loss, leading to faster insurance claim settlements. By providing a financial safety net, PMFBY helps prevent farmer distress and ensures the long-term sustainability and food security of the nation.",
+    "eligibility": "All farmers including sharecroppers and tenant farmers growing the notified crops in the notified areas are eligible for coverage. Loanee farmers are included by default, while non-loanee farmers can opt-in.",
     "documents": [
-      "Land Tax Receipt (Pattayan Receipt)",
       "Aadhaar Card",
-      "Bank Account registered on AIMS",
-      "Location Map of the farm site"
+      "Land records (Khasra Number / Khata Number)",
+      "Sowing Certificate (issued by Patwari/Sarpanch)",
+      "Cancelled Cheque or Bank Passbook copy",
+      "ID and Address Proof"
     ],
-    "applyLink": "https://aims.kerala.gov.in/",
-    "state": "Kerala"
+    "applyLink": "https://pmfby.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
   },
   {
-    "id": "9",
-    "name": "Kudumbashree Start-up Village Entrepreneurship",
-    "category": "Entrepreneur",
-    "description": "Aims to support Kudumbashree members to set up micro-enterprises in rural areas. Provides handholding, training, and financial support (CEF - Community Enterprise Fund).",
-    "eligibility": "1. Must be a member of Kudumbashree NHG in Kerala.\n2. Resident of a rural block covered by the SVEP programme.",
+    "id": "F4",
+    "name": "Soil Health Card Scheme",
+    "category": "Farmer",
+    "description": "The Soil Health Card Scheme is a scientific initiative focused on improving the long-term productivity and health of Indian farmlands. Under this scheme, the government provides farmers with 'Soil Health Cards' which contain detailed information about the nutrient status of their soil (macro-nutrients, secondary-nutrients, and micro-nutrients) and its physical properties like pH. Based on the soil test results, the card provides customized recommendations for the optimal dosage of fertilizers and soil amendments needed for different crops. This help farmers avoid over-utilization of fertilizers, which not only saves them money but also prevents soil degradation and environmental pollution. By adopting nutrient-based farming, farmers can increase their crop yields significantly and improve the efficiency of their production, directly leading to better income and more sustainable farming practices.",
+    "eligibility": "The scheme is open to all farmers across the country. It aims to provide soil nutrient status and recommendations to improve productivity.",
     "documents": [
-      "Kudumbashree ID / Membership proof",
       "Aadhaar Card",
-      "Micro-enterprise Project Report",
-      "Bank Passbook"
+      "Land Ownership Documents",
+      "Details of crops grown",
+      "Soil samples (to be collected by authorities)",
+      "Mobile number"
     ],
-    "applyLink": "https://www.kudumbashree.org/",
-    "state": "Kerala"
+    "applyLink": "https://soilhealth.dac.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F5",
+    "name": "Rashtriya Krishi Vikas Yojana",
+    "category": "Farmer",
+    "description": "The Rashtriya Krishi Vikas Yojana (RKVY) - RAFTAAR is a centrally sponsored scheme designed to provide states with the flexibility and autonomy to plan and execute their own agricultural and allied sector development programs. The 'RAFTAAR' (Remunerative Approaches for Agriculture and Allied Sector Rejuvenation) component emphasizes on making farming a profitable business activity by strengthening pre and post-harvest infrastructure, promoting agri-entrepreneurship, and supporting value-addition. The scheme funds various sub-projects like building cold storages, marketing yards, and processing units, as well as providing support for organic farming and mechanization. By encouraging innovation and localized agricultural planning, RKVY-RAFTAAR helps states address their unique agricultural challenges and improve the efficiency and remunerative nature of the entire agricultural ecosystem in India.",
+    "eligibility": "Implementation is through State Agriculture Departments. Individual farmers, clusters of farmers, and entrepreneurs working in agri-processing or infrastructure are eligible for various sub-components.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Registration Documents",
+      "Project Report (for infrastructure/business components)",
+      "Identity Proof",
+      "Bank Account details"
+    ],
+    "applyLink": "https://rkvy.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F6",
+    "name": "National Food Security Mission",
+    "category": "Farmer",
+    "description": "The National Food Security Mission (NFSM) was launched with the urgent goal of increasing the production of essential food grains like rice, wheat, and pulses, as well as coarse cereals and oilseeds. The mission works on two fronts: area expansion and productivity enhancement. It provides farmers in identified districts with high-yielding variety seeds, technical training through field demonstrations, and support for agricultural mechanization and irrigation. NFSM is crucial for India's food security as it focuses on bridging the yield gap between different regions and promoting sustainable farming practices. By empowering farmers with better seeds and modern technologies, the mission aims to ensure that the nation can meet its growing demand for food while also increasing the profitability of the farmers involved in staple crop production.",
+    "eligibility": "Farmers in specific districts notified by the government for various crop missions. Preference is given to small and marginal farmers, and women farmers.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Record copy",
+      "Proof of Category (SC/ST/Woman)",
+      "Bank Passbook copy",
+      "Residential proof"
+    ],
+    "applyLink": "https://nfsm.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F7",
+    "name": "Paramparagat Krishi Vikas Yojana",
+    "category": "Farmer",
+    "description": "The Paramparagat Krishi Vikas Yojana (PKVY) is a flagship scheme aimed at promoting organic farming across India through a cluster-based approach. The scheme encourages farmers to form groups (clusters) and adopt traditional, pesticide-free, and chemical-free agricultural practices. PKVY provides significant financial support for various stages of organic conversion, including the purchase of organic seeds and fertilizers, soil testing, certification costs, and developing marketing linkages. By focusing on soil health and biodiversity, PKVY aims to produce high-quality, safe food while also improving the environment and enhancing the long-term fertility of the land. Organic farming often yields higher prices for farmers in the national and international markets, providing them with a more remunerative and eco-friendly livelihood option. PKVY is a key part of India's vision for a healthier and more sustainable agricultural future.",
+    "eligibility": "Farmers belonging to a cluster of at least 50 or more farmers having 50 acres of land. Farmers within the group are eligible for support for organic inputs and certification.",
+    "documents": [
+      "Aadhaar Card",
+      "Cluster Membership Proof",
+      "Land Records with Khasra numbers",
+      "Identity Proof",
+      "Organic farming declaration"
+    ],
+    "applyLink": "https://pkvy.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F8",
+    "name": "Pradhan Mantri Krishi Sinchai Yojana",
+    "category": "Farmer",
+    "description": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY) is a strategic mission with the vision of providing protective irrigation to every farm in the country ('Har Khet Ko Pani'). It is a comprehensive scheme that integrates water source development, efficient distribution, and smart field application to achieve 'More Crop Per Drop.' PMKSY focuses on building new water reservoirs, renovating traditional water bodies like ponds, and promoting micro-irrigation systems like drip and sprinkler irrigation. By providing farmers with reliable access to water, the scheme significantly reduces their dependence on monsoons and increases the intensity of cropping, leading to higher agricultural output and stable incomes. PMKSY also emphasizes on decentralized water management, empowering local communities and farmers to take charge of their water resources and ensuring long-term water security for the rural sector.",
+    "eligibility": "All categories of farmers, including small and marginal farmers, are eligible. Priority is given to districts with water scarcity and low irrigation coverage.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents",
+      "Caste Certificate (if applying for subsidy)",
+      "Quotations for irrigation equipment (Drip/Sprinkler)",
+      "Map of the field showing water source"
+    ],
+    "applyLink": "https://pmksy.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F9",
+    "name": "e-NAM",
+    "category": "Farmer",
+    "description": "The National Agriculture Market (e-NAM) is a pan-India electronic trading portal that has revolutionized the way agricultural commodities are traded in Indian mandis. Launched to create a unified national market, e-NAM networks the existing physical APMC (Agricultural Produce Market Committee) mandis into an online platform. This allows farmers to bypass local middlemen and sell their produce directly to buyers across the country through transparent online bidding. e-NAM ensures that farmers get better prices for their crops based on actual demand and multi-market competition. The system also includes scientific quality testing of the produce, ensuring fair transactions for both buyers and sellers. By providing real-time information on market prices and facilitating online payments directly to farmers' bank accounts, e-NAM is a powerful tool for empowering the farming community and making the agricultural supply chain more efficient and transparent.",
+    "eligibility": "Any individual farmer who wishes to sell their produce at a Mandi integrated with e-NAM. Registration can be done as an individual farmer or through FPOs (Farmer Producer Organizations).",
+    "documents": [
+      "Aadhaar Card",
+      "Bank details with IFSC code",
+      "Mobile number for receiving transaction alerts",
+      "Proof of Identity",
+      "Photographs"
+    ],
+    "applyLink": "https://enam.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F10",
+    "name": "Integrated Scheme for Agricultural Marketing",
+    "category": "Farmer",
+    "description": "The Integrated Scheme for Agricultural Marketing (ISAM) is a comprehensive initiative to modernize the agricultural marketing infrastructure in India. The scheme recognizes that merely producing more is not enough; farmers need robust infrastructure to store, process, and market their produce efficiently. ISAM provides financial assistance in the form of capital investment subsidies to various stakeholders—including individual farmers, cooperatives, and private companies—to set up essential assets such as cold storages, drying yards, ripening chambers, and grading units. It also supports the development of a national market for agricultural products by strengthening the link between the field and the final consumer. ISAM is designed to reduce post-harvest losses, increase the shelf life of perishable products, and ensure that farmers capture a larger share of the value created in the agricultural supply chain.",
+    "eligibility": "Farmers, Growers, Farmer Producer Organizations (FPOs), Cooperatives, and private companies involved in setting up agricultural marketing assets like cold storage, godowns, etc.",
+    "documents": [
+      "Aadhaar Card",
+      "Detailed Project Report (DPR)",
+      "Land allocation/ownership proof",
+      "Bank Loan Sanction Letter",
+      "Business registration documents (for cooperatives/FPOs)"
+    ],
+    "applyLink": "https://agmarknet.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F11",
+    "name": "National Mission on Oilseeds and Oil Palm",
+    "category": "Farmer",
+    "description": "The National Mission on Oilseeds and Oil Palm (NMOOP) is a strategic intervention aimed at making India self-sufficient in edible oil production. Recognizing the high import bills for vegetable oils, the government provides financial and technical support to farmers to increase the productivity of traditional oilseed crops like Groundnut, Mustard, and Soyabean, and to significantly expand the area under Oil Palm cultivation. The mission provides incentives for quality seeds, micro-irrigation, and post-harvest facilities, along with extensive training for farmers on modern oil palm cultivation techniques. By diversifying into oil-yielding crops, farmers can improve their income stability and utilize marginal lands more effectively. NMOOP is a critical component of India's agricultural strategy to achieve 'Aatmanirbhar Bharat' (Self-reliant India) in the essential food commodities sector.",
+    "eligibility": "Farmers interested in growing oilseeds (Groundnut, Mustard, Soyabean, etc.) or Oil Palm in the notified states/districts.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents",
+      "Identity Proof",
+      "Bank Account details",
+      "Residential proof"
+    ],
+    "applyLink": "https://nmoop.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F12",
+    "name": "National Mission for Sustainable Agriculture",
+    "category": "Farmer",
+    "description": "The National Mission for Sustainable Agriculture (NMSA) is designed to make Indian agriculture more resilient to the challenges of climate change and environmental degradation. The mission focuses on enhancing agricultural productivity, especially in rainfed areas, which constitute a large part of the country's farmland. NMSA promotes Integrated Farming Systems (IFS) which combine crops with dairy, poultry, and other allied activities to diversify risk and income. It also emphasizes on soil health management, efficient water usage, and resource conservation. By adopting sustainable practices like zero-budget natural farming and precision agriculture, NMSA aims to produce more with fewer inputs while preserving natural resources like soil and water for future generations. The mission plays a pivotal role in ensuring the long-term food security of the nation while protecting the livelihoods of millions of small and marginal farmers who are most vulnerable to climate variabilities.",
+    "eligibility": "The scheme focuses on small and marginal farmers, especially in dryland and rainfed regions of India. Promotion is done through cluster groups and individual applications.",
+    "documents": [
+      "Aadhaar Card",
+      "Land records",
+      "Identity proof",
+      "Evidence of existing farming practices",
+      "Bank account copy"
+    ],
+    "applyLink": "https://nmsa.dac.gov.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F13",
+    "name": "Gramin Bhandaran Yojana",
+    "category": "Farmer",
+    "description": "The Gramin Bhandaran Yojana (Rural Godown Scheme) is a critical intervention by the Government of India to address the lack of scientific storage facilities in rural areas. The primary goal is to empower farmers by providing them with the infrastructure to store their farm produce safely after harvest, thereby preventing distress sales during times of market gluts and low prices. The scheme provides capital investment subsidies for the construction or renovation of rural godowns by individuals, cooperatives, or NGOs. These scientific storage facilities help maintain the quality of the produce and prevent losses due to pests, weather, and spoilage. Importantly, stored produce can be used as collateral for 'pledge financing,' allowing farmers to obtain immediate credit from banks to meet their urgent needs while waiting for better market prices. By strengthening the rural storage network, the scheme enhances the bargaining power and financial stability of the Indian farmer.",
+    "eligibility": "Individual farmers, groups of farmers/growers, partnership/proprietary firms, Non-Governmental Organizations (NGOs), Self Help Groups (SHGs), Companies, Corporations, Cooperatives, etc.",
+    "documents": [
+      "Aadhaar Card",
+      "Land ownership certificate for the site of godown",
+      "Site plan/map",
+      "Detailed estimated cost of construction",
+      "Bank Approval letter",
+      "Photograph of the applicant"
+    ],
+    "applyLink": "https://agricoop.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F14",
+    "name": "National Horticulture Mission",
+    "category": "Farmer",
+    "description": "The Mission for Integrated Development of Horticulture (MIDH), widely known as the National Horticulture Mission, is a flagship program for the holistic development of India's large and diverse horticulture sector. It covers fruits, vegetables, root and tuber crops, mushrooms, spices, flowers, aromatics, and plantation crops like coconut and cocoa. The mission aims to double the farmers' income by encouraging diversification from low-value staples to high-value horticultural crops. MIDH provides financial and technical assistance for setting up nurseries for quality planting material, expanding the area under horticulture, creating irrigation infrastructure, and promoting post-harvest management like cold storage and primary processing. By enhancing productivity and focusing on quality, the mission not only improves the domestic supply of nutritious food but also boosts India's export potential in the global horticultural market. It is a major driver of agricultural growth and rural employment throughout the country.",
+    "eligibility": "Small and marginal farmers holding land for horticultural crops. Preference to group farming and women-led initiatives.",
+    "documents": [
+      "Aadhaar Card",
+      "Land Records (7/12 extract or equivalent)",
+      "Quotations for nursery plants or infrastructure",
+      "Identity and Address proof",
+      "Bank passbook copy"
+    ],
+    "applyLink": "https://nhm.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F15",
+    "name": "Pradhan Mantri Annadata Aay Sanrakshan Abhiyan",
+    "category": "Farmer",
+    "description": "PM-AASHA is an umbrella mission launched to fulfill the government's commitment of ensuring remunerative prices to the farmers for their produce, particularly for oilseeds and pulses where market prices often fall below the Minimum Support Price (MSP). PM-AASHA integrates three major sub-schemes: the Price Support Scheme (PSS) where physical procurement is done by central agencies, the Price Deficiency Payment Scheme (PDPS) where farmers are compensated for the difference between market price and MSP, and the Pilot of Private Procurement & Stockist Scheme (PPPS). By using this multi-pronged approach, the government aims to strengthen the price discovery mechanism for farmers and prevent them from suffering losses due to market volatility. PM-AASHA is a critical pillar of the agricultural policy aimed at doubling farmers' income and providing a reliable income safety net for crop production.",
+    "eligibility": "All farmers growing crops (specifically oilseeds and pulses) that fall under the Price Support Scheme (PSS), Price Deficiency Payment Scheme (PDPS), or Pilot of Private Procurement & Stockist Scheme (PPPS).",
+    "documents": [
+      "Aadhaar Card",
+      "Registration on the State procurement portal",
+      "Land holding records",
+      "Sale receipt of the crop (for price deficiency payment)",
+      "Bank Account details"
+    ],
+    "applyLink": "https://agricoop.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F16",
+    "name": "National Bamboo Mission",
+    "category": "Farmer",
+    "description": "The National Bamboo Mission was restructured to give a major fillip to the bamboo sector, often called the 'Green Gold.' The mission aims at holistic development—from plantation on both government and private lands to setting up processing units and developing marketing channels. Bamboo is a fast-growing, highly versatile plant that can provide sustainable livelihoods to millions, particularly in North-East India and tribal areas. It is used in construction, furniture, paper, and as a substitute for plastic and wood. The mission provides financial assistance for setting up quality nurseries, developing bamboo clusters, and promoting the export of value-added bamboo products. By empowering farmers to diversify into bamboo cultivation, the mission not only improves their income but also contributes to land restoration, environmental conservation, and the 'Aatmanirbhar' vision by reducing imports of bamboo-based products.",
+    "eligibility": "Individual farmers or groups of farmers having suitable land for bamboo cultivation. Focus is on states in North East India and other bamboo-rich regions.",
+    "documents": [
+      "Aadhaar Card",
+      "Land records (Patta/Khasra)",
+      "Identity and Address Proof",
+      "Consent letter if land is leased",
+      "Project Plan for bamboo plantation"
+    ],
+    "applyLink": "https://nbm.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F17",
+    "name": "Livestock Insurance Scheme",
+    "category": "Farmer",
+    "description": "The Livestock Insurance Scheme is a vital risk-management tool provided to the Indian rural population whose livelihoods are heavily dependent on animal husbandry. Recognizing that livestock like cattle and buffalo are high-value assets for farmers, the government provides insurance cover to protect them against the financial shock of an animal's death due to diseases or accidents. The scheme is centrally sponsored and provides subsidized premiums for farmers, specifically benefiting those from weaker sections. By securing the farmer's investment in livestock, the scheme encourages them to invest in better breeds and more productive animals, thereby boosting the milk, meat, and leather industries. It provides the necessary financial stability and confidence to livestock owners, allowing them to better manage the inherent risks of rearing animals and contributing to the overall growth of the dairy and livestock sectors in India.",
+    "eligibility": "Livestock owners especially of cattle and buffalo. Insurance cover is provided to a maximum of two animals per beneficiary for a period of three years.",
+    "documents": [
+      "Aadhaar Card",
+      "Health Certificate of the animal issued by a Vet",
+      "Photographs of the animal with an ear-tag",
+      "Bank Account details",
+      "Residential proof"
+    ],
+    "applyLink": "https://dahd.nic.in",
+    "state": "All",
+    "handledBy": "Department of Animal Husbandry"
+  },
+  {
+    "id": "F18",
+    "name": "Dairy Entrepreneurship Development Scheme",
+    "category": "Farmer",
+    "description": "The Dairy Entrepreneurship Development Scheme (DEDS) is a major initiative to promote self-employment and structural changes in the dairy sector. The scheme provides substantial back-ended capital subsidies to individuals and organized groups like Self-Help Groups (SHGs) to set up modern, scientifically managed dairy farms. It covers various components including the purchase of milch animals, calf rearing, setting up milking machines, and establishing basic processing and cold chain facilities. DEDS aims to increase the production of clean and high-quality milk, conserves good breeding stock, and encourage entrepreneurship among rural youth and women. By transforming dairy into a profitable business enterprise, the scheme helps generate rural employment and fulfills the growing national demand for quality milk and milk products. It is a key driver of the White Revolution's next phase in India, focusing on efficiency and value addition.",
+    "eligibility": "Farmers, individual entrepreneurs, NGOs, companies, groups of unorganized and organized sector etc. Groups of organized sector, Self Help Groups, Dairy Cooperative Societies, Milk Unions, Milk Federations etc.",
+    "documents": [
+      "Aadhaar Card",
+      "Project Report for the dairy farm",
+      "Land allocation/ownership documents",
+      "Bank Loan Sanction letter",
+      "Registration of the entity (if applicable)",
+      "Caste Certificate (for higher subsidy)"
+    ],
+    "applyLink": "https://nabard.org",
+    "state": "All",
+    "handledBy": "NABARD"
+  },
+  {
+    "id": "F19",
+    "name": "National Project on Organic Farming",
+    "category": "Farmer",
+    "description": "The National Project on Organic Farming is a dedicated program to build the foundational infrastructure for a robust organic agricultural sector in India. The project focuses on creating a reliable certification system, producing high-quality organic inputs like biopesticides and biofertilizers, and developing effective market linkages for organic produce. It provides technical training to farmers and assists in setting up production units for organic fertilizers (like large-scale vermicompost centers). By encouraging the move away from chemical-intensive agriculture, the project aims to produce safer, chemical-free food for the domestic and international markets, while restoring soil health and protecting biodiversity. The project also works on building awareness among consumers about the benefits of organic food, thereby creating a sustainable demand that drives the organic farming movement across diverse agricultural regions of the country.",
+    "eligibility": "Farmers and agri-entrepreneurs interested in adopting organic farming or establishing organic input production units (like vermicompost centers).",
+    "documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents",
+      "Description of organic inputs to be used",
+      "Project report (for input units)",
+      "Bank Account copy"
+    ],
+    "applyLink": "https://ncof.dacnet.nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
+  },
+  {
+    "id": "F20",
+    "name": "Agricultural Technology Management Agency",
+    "category": "Farmer",
+    "description": "The Agricultural Technology Management Agency (ATMA) is a unique institutional mechanism that brings together all the stakeholders in the agricultural sector at the district level—including researchers, extension workers, and farmers. ATMA's goal is to make the technology dissemination system more farmer-driven, responsive to local needs, and integrated across various sub-sectors like crops, horticulture, and livestock. ATMA promotes 'Farm Schools' where farmers can learn directly from other successful farmers and researchers in the field. It facilitates the testing of new technologies on farmers' lands and encourages the formation of farmer groups and clusters for collective action. By bridging the gap between scientific research and actual field practices, ATMA empowers farmers with the latest knowledge and skills, directly leading to better technology adoption, improved agricultural productivity, and higher farm incomes across the country.",
+    "eligibility": "The scheme targets all categories of farmers in the district. It specifically focuses on local groups and clusters of farmers (Farm Schools).",
+    "documents": [
+      "Aadhaar Card",
+      "Details of crops and farming methods",
+      "Group registration documents (if applying as a cluster)",
+      "Bank passbook copy",
+      "Mobile number"
+    ],
+    "applyLink": "https://atma-nic.in",
+    "state": "All",
+    "handledBy": "Ministry of Agriculture"
   }
 ]

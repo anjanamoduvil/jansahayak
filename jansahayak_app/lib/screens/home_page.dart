@@ -4,6 +4,8 @@ import '../providers/scheme_provider.dart';
 import '../providers/user_profile_provider.dart';
 import '../widgets/translated_text.dart';
 import 'scheme_details_page.dart';
+import 'profile_screen.dart';
+import 'language_selection_page.dart';
 
 class HomePage extends StatefulWidget {
   static const route = '/home';
@@ -17,8 +19,11 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    final profile = context.read<UserProfileProvider>().profile;
-    context.read<SchemeProvider>().loadSchemes(category: profile?.occupation);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final profile = context.read<UserProfileProvider>().profile;
+      context.read<SchemeProvider>().loadSchemes(category: profile?.occupation);
+    });
   }
 
   @override
@@ -33,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const TranslatedText('Government Schemes'),
-            Text(
+            TranslatedText(
               'Showing for: $occupation',
               style: const TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
             ),
@@ -42,7 +47,11 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
             icon: const Icon(Icons.language),
-            onPressed: () => Navigator.pushNamed(context, '/language'),
+            onPressed: () => Navigator.pushNamed(context, LanguageSelectionPage.route),
+          ),
+          IconButton(
+            icon: const Icon(Icons.person),
+            onPressed: () => Navigator.pushNamed(context, ProfileScreen.route),
           ),
         ],
       ),

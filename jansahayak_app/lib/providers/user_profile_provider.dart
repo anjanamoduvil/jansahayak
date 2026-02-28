@@ -3,9 +3,11 @@ import '../models/user_info.dart';
 
 class UserProfileProvider extends ChangeNotifier {
   UserInfoModel? _profile;
+  String? _category; // <-- Add this line
 
   UserInfoModel? get profile => _profile;
   String get language => _profile?.preferredLanguage ?? 'en';
+  String? get category => _category; // <-- Add this getter
 
   void setProfile(UserInfoModel profile) {
     _profile = profile;
@@ -63,6 +65,12 @@ class UserProfileProvider extends ChangeNotifier {
         preferredLanguage: _profile!.preferredLanguage,
       );
     }
+    notifyListeners();
+  }
+
+  // Add this method for category
+  void setCategory(String category) {
+    _category = category;
     notifyListeners();
   }
 }
