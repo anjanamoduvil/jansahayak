@@ -11,6 +11,7 @@ import 'screens/home_page.dart';
 import 'screens/scheme_details_page.dart';
 import 'screens/profile_screen.dart'; 
 import 'screens/chatbot_screen.dart';
+import 'screens/community_screen.dart'; // <-- Add this import
 
 void main() {
   runApp(const JanSahayakApp());
@@ -39,7 +40,8 @@ class JanSahayakApp extends StatelessWidget {
           HomePage.route: (_) => const HomePage(),
           SchemeDetailsPage.route: (_) => const SchemeDetailsPage(),
           ProfileScreen.route: (_) => const ProfileScreen(),
-          ChatbotScreen.route: (_) => const ChatbotScreen(), // <-- Add this route
+          ChatbotScreen.route: (_) => const ChatbotScreen(),
+          CommunityScreen.route: (_) => const CommunityScreen(), // <-- Add this route
         },
       ),
     );

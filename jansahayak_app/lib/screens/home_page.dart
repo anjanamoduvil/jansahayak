@@ -7,6 +7,7 @@ import 'scheme_details_page.dart';
 import 'profile_screen.dart';
 import 'language_selection_page.dart';
 import 'chatbot_screen.dart';
+import 'community_screen.dart';
 
 class HomePage extends StatefulWidget {
   static const route = '/home';
@@ -54,6 +55,10 @@ class _HomePageState extends State<HomePage> {
             icon: const Icon(Icons.person),
             onPressed: () => Navigator.pushNamed(context, ProfileScreen.route),
           ),
+          IconButton(
+  icon: const Icon(Icons.groups),
+  onPressed: () => Navigator.pushNamed(context, CommunityScreen.route),
+),
         ],
       ),
       body: provider.loading
